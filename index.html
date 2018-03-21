@@ -1,4 +1,6 @@
-<html>
+<head>
+	<title>MineCraft Proposal</title>
+</head>
 <body>
 </body>
 <script>
@@ -18,11 +20,11 @@ function createTbl()
 }
 table.innerHTML = createTbl();
 document.body.innerHTML = "";
-document.body.appendChild(table)
+document.body.appendChild(table);
 
-var sty = "td {height:15px;width:15px;} "
-sty += "table{border: 5px solid red} "
-sty += ".active{background-color:black} "
+var sty = "td{height:15px;width:15px;clip-path: polygon(49% 36%, 76% 24%, 100% 43%, 50% 100%, 0 45%, 23% 24%);} "
+sty += "table{border: 5px solid white;margin:20px auto;width:400px;text-align:center;} "
+sty += ".active{background-color:crimson} "
 sty += ".food{background-color:#16f55b} "
 dsty = document.createElement("style")
 dsty.innerHTML = sty;
@@ -106,4 +108,4 @@ for(var times=1;times<=20;times++)
 	else
 		setTimeout(function() {reverse();}, ((largest*timeFrame)+(times*500)) );
 }
-</script>
+	</script>
